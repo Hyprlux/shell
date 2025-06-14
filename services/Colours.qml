@@ -53,7 +53,7 @@ Singleton {
     }
 
     function setMode(mode: string): void {
-        setModeProc.command = ["caelestia", "scheme", "dynamic", "default", mode];
+        setModeProc.command = ["hyprlux", "scheme", "dynamic", "default", mode];
         setModeProc.startDetached();
     }
 

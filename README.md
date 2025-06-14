@@ -1,25 +1,14 @@
-<h1 align=center>caelestia-shell</h1>
+<h1 align=center>hyprlux-shell</h1>
 
 <div align=center>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/caelestia-dots/shell?style=for-the-badge&labelColor=101418&color=9ccbfb)
-![GitHub Repo stars](https://img.shields.io/github/stars/caelestia-dots/shell?style=for-the-badge&labelColor=101418&color=b9c8da)
-![GitHub repo size](https://img.shields.io/github/repo-size/caelestia-dots/shell?style=for-the-badge&labelColor=101418&color=d3bfe6)
-![Ko-Fi donate](https://img.shields.io/badge/donate-kofi?style=for-the-badge&logo=ko-fi&logoColor=ffffff&label=ko-fi&labelColor=101418&color=f16061&link=https%3A%2F%2Fko-fi.com%2Fsoramane)
+![GitHub last commit](https://img.shields.io/github/last-commit/hyprlux/shell?style=for-the-badge&labelColor=101418&color=9ccbfb)
+![GitHub repo size](https://img.shields.io/github/repo-size/hyprlux/shell?style=for-the-badge&labelColor=101418&color=d3bfe6)
 
 </div>
 
-> [!WARNING]
-> I am currently working on a complete overhaul for everything but the shell which should fix most issues with installation.
-> As such, I will not be working on the shell until the overhaul is finished. I will still try to answer issues, however other
-> than minor issues, I will most likely not be able to fix them (same goes for feature requests). PRs are still welcome though!
-> 
-> Some breaking changes:
-> - Rename the `scripts` repo -> `cli`
-> - Rename the `hypr` repo -> `caelestia` (this will be the main repo after the change)
-> - Merge all other repos (except this and `cli`) into `caelestia`
-> - Installation for the `shell` and `cli` will be done via AUR packages; `caelestia` will have a meta package and an install script (should fix most installation issues)
-> - Overhaul the scheme system (should fix a few bugs with that and make it cleaner in general)
+> [!IMPORTANT]
+> This repo is a fork of (caelestia-dots)[https://github.com/caelestia-dots] (shell)[https://github.com/caelestia-dots/shell] repo, with added AI components and anime image generation using (end-4)[https://github.com/end-4]'s (config)[https://github.com/end-4/dots-hyprland]
 
 https://github.com/user-attachments/assets/0840f496-575c-4ca6-83a8-87bb01a85c5f
 
@@ -27,7 +16,7 @@ https://github.com/user-attachments/assets/0840f496-575c-4ca6-83a8-87bb01a85c5f
 
 - Widgets: [`Quickshell`](https://quickshell.outfoxxed.me)
 - Window manager: [`Hyprland`](https://hyprland.org)
-- Dots: [`caelestia`](https://github.com/caelestia-dots)
+- Dots: [`hyprlux`](https://github.com/Hyprlux/dots)
 
 ## Installation
 
@@ -35,36 +24,33 @@ This is not implemented as of now.
 
 ## Usage
 
-The shell can be started in two ways: via systemd or manually running `caelestia shell`.
+The shell can be started in two ways: via systemd or manually running `hyprlux shell`.
 
 ### Via systemd
 
-The install script creates and enables the systemd service `caelestia-shell.service` which should automatically start the
+The install script creates and enables the systemd service `hyprlux-shell.service` which should automatically start the
 shell on login.
 
 ### Via command
 
-If not on a system that uses systemd, you can manually start the shell via `caelestia-shell`.
+If not on a system that uses systemd, you can manually start the shell via `hyprlux-shell`.
 To autostart it on login, you can use an `exec-once` rule in your Hyprland config:
 ```
-exec-once = caelestia shell
+exec-once = hyprlux shell
 ```
 
 ### Shortcuts/IPC
 
 All keybinds are accessible via Hyprland [global shortcuts](https://wiki.hyprland.org/Configuring/Binds/#dbus-global-shortcuts).
-For a preconfigured setup, install [`caelestia-hypr`](https://github.com/caelestia-dots/hypr) via `caelestia install hypr` or see
-[this file](https://github.com/caelestia-dots/hypr/blob/main/hyprland/keybinds.conf#L1-L29) for an example on how to use global
-shortcuts.
 
-All IPC commands can be accessed via `caelestia shell ...`. For example
+All IPC commands can be accessed via `hyprlux shell ...`. For example
 ```sh
-caelestia shell mpris getActive trackTitle
+hyprlux shell mpris getActive trackTitle
 ```
 
-The list of IPC commands can be shown via `caelestia shell help`:
+The list of IPC commands can be shown via `hyprlux shell help`:
 ```
-> caelestia shell help
+> hyprlux shell help
 target mpris
   function stop(): void
   function play(): void
@@ -93,7 +79,7 @@ The wallpapers for the wallpaper switcher are read from `~/Pictures/Wallpapers`,
 them to show up in the switcher (you need to restart the shell after changing stuff in `~/Pictures/Wallpapers` sadly,
 no watching for changes yet).
 
-To set the wallpaper, you can use the command `caelestia wallpaper`. Use `caelestia wallpaper -h` for more info about
+To set the wallpaper, you can use the command `hyprlux wallpaper`. Use `hyprlux wallpaper -h` for more info about
 the command.
 
 ## Credits
@@ -109,13 +95,3 @@ which helped me a lot with learning how to use Quickshell.
 
 Finally another thank you to all the configs I took inspiration from (only one for now):
 - [Axenide/Ax-Shell](https://github.com/Axenide/Ax-Shell)
-
-## Stonks 📈
-
-<a href="https://www.star-history.com/#caelestia-dots/shell&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=caelestia-dots/shell&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=caelestia-dots/shell&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=caelestia-dots/shell&type=Date" />
- </picture>
-</a>
