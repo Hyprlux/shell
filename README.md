@@ -8,7 +8,7 @@
 </div>
 
 > [!IMPORTANT]
-> This repo is a fork of (caelestia-dots)[https://github.com/caelestia-dots] (shell)[https://github.com/caelestia-dots/shell] repo, with added AI components and anime image generation using (end-4)[https://github.com/end-4]'s (config)[https://github.com/end-4/dots-hyprland]
+> This repo is a fork of [caelestia-dots](https://github.com/caelestia-dots) [shell](https://github.com/caelestia-dots/shell) repo, with added AI components and anime image generation using [end-4](https://github.com/end-4)'s [config](https://github.com/end-4/dots-hyprland)
 
 https://github.com/user-attachments/assets/0840f496-575c-4ca6-83a8-87bb01a85c5f
 
