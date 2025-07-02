@@ -112,7 +112,7 @@ Row {
             onAccepted: {
                 Paths.copy(selectedFile, `${Paths.home}/.face`);
                 pfp.pathChanged();
-                Quickshell.execDetached(["notify-send", "-a", "caelestia-shell", "-u", "low", "Profile picture changed", `Profile picture changed to ${Paths.strip(selectedFile)}`]);
+                Quickshell.execDetached(["notify-send", "-a", "hyprlux-shell", "-u", "low", "Profile picture changed", `Profile picture changed to ${Paths.strip(selectedFile)}`]);
             }
         }
     }

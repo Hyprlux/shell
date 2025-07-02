@@ -36,7 +36,7 @@ Singleton {
 
     function setWallpaper(path: string): void {
         actualCurrent = path;
-        Quickshell.execDetached(["caelestia", "wallpaper", "-f", path]);
+        Quickshell.execDetached(["hyprlux", "wallpaper", "-f", path]);
     }
 
     function preview(path: string): void {
@@ -84,7 +84,7 @@ Singleton {
     Process {
         id: getPreviewColoursProc
 
-        command: ["caelestia", "wallpaper", "-p", root.previewPath]
+        command: ["hyprlux", "wallpaper", "-p", root.previewPath]
         stdout: StdioCollector {
             onStreamFinished: {
                 Colours.load(text, true);

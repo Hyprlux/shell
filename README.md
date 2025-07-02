@@ -1,11 +1,10 @@
-<h1 align=center>caelestia-shell</h1>
+<h1 align=center>hyprlux-shell</h1>
 
 <div align=center>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/caelestia-dots/shell?style=for-the-badge&labelColor=101418&color=9ccbfb)
-![GitHub Repo stars](https://img.shields.io/github/stars/caelestia-dots/shell?style=for-the-badge&labelColor=101418&color=b9c8da)
-![GitHub repo size](https://img.shields.io/github/repo-size/caelestia-dots/shell?style=for-the-badge&labelColor=101418&color=d3bfe6)
-[![Ko-Fi donate](https://img.shields.io/badge/donate-kofi?style=for-the-badge&logo=ko-fi&logoColor=ffffff&label=ko-fi&labelColor=101418&color=f16061&link=https%3A%2F%2Fko-fi.com%2Fsoramane)](https://ko-fi.com/soramane)
+![GitHub last commit](https://img.shields.io/github/last-commit/Hyprlux/shell?style=for-the-badge&labelColor=101418&color=9ccbfb)
+![GitHub Repo stars](https://img.shields.io/github/stars/Hyprlux/shell?style=for-the-badge&labelColor=101418&color=b9c8da)
+![GitHub repo size](https://img.shields.io/github/repo-size/Hyprlux/shell?style=for-the-badge&labelColor=101418&color=d3bfe6)
 
 </div>
 
@@ -15,13 +14,13 @@ https://github.com/user-attachments/assets/0840f496-575c-4ca6-83a8-87bb01a85c5f
 
 -   Widgets: [`Quickshell`](https://quickshell.outfoxxed.me)
 -   Window manager: [`Hyprland`](https://hyprland.org)
--   Dots: [`caelestia`](https://github.com/caelestia-dots)
+-   Dots: [`dots`](https://github.com/Hyprlux/dots)
 
 ## Installation
 
 > [!NOTE]
-> This repo is for the desktop shell of the caelestia dots. If you want installation instructions
-> for the entire dots, head to [the main repo](https://github.com/caelestia-dots/caelestia) instead.
+> This repo is for the desktop shell of the hyprlux dots. If you want installation instructions
+> for the entire dots, head to [the main repo](https://github.com/Hyprlux/dots) instead.
 
 ### Package manager
 
@@ -36,7 +35,7 @@ like [`yay`](https://github.com/Jguer/yay) or manually downloading the PKGBUILD 
 
 Dependencies:
 
--   [`caelestia-cli`](https://github.com/caelestia-dots/cli)
+-   [`hyprlux-cli`](https://github.com/Hyprlux/cli)
 -   [`quickshell-git`](https://quickshell.outfoxxed.me) - this has to be the git version, not the latest tagged version
 -   [`ddcutil`](https://github.com/rockowitz/ddcutil)
 -   [`brightnessctl`](https://github.com/Hummer12007/brightnessctl)
@@ -56,14 +55,14 @@ Dependencies:
 -   [`swappy`](https://github.com/jtheoof/swappy)
 -   [`libqalculate`](https://github.com/Qalculate/libqalculate)
 
-To install the shell manually, install all dependencies and clone this repo to `$XDG_CONFIG_HOME/quickshell/caelestia`.
-Then compile the beat detector and install it to `/usr/lib/caelestia/beat_detector`.
+To install the shell manually, install all dependencies and clone this repo to `$XDG_CONFIG_HOME/quickshell/hyprlux`.
+Then compile the beat detector and install it to `/usr/lib/hyprlux/beat_detector`.
 
 ```sh
 cd $XDG_CONFIG_HOME/quickshell
-git clone https://github.com/caelestia-dots/shell.git caelestia
-g++ -std=c++17 -Wall -Wextra -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/usr/include/aubio -o beat_detector caelestia/assets/beat_detector.cpp -lpipewire-0.3 -laubio
-sudo mv beat_detector /usr/lib/caelestia/beat_detector
+git clone https://github.com/Hyprlux/shell.git hyprlux
+g++ -std=c++17 -Wall -Wextra -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/usr/include/aubio -o beat_detector hyprlux/assets/beat_detector.cpp -lpipewire-0.3 -laubio
+sudo mv beat_detector /usr/lib/hyprlux/beat_detector
 ```
 
 ## Usage
@@ -214,13 +213,3 @@ which helped me a lot with learning how to use Quickshell.
 Finally another thank you to all the configs I took inspiration from (only one for now):
 
 -   [Axenide/Ax-Shell](https://github.com/Axenide/Ax-Shell)
-
-## Stonks 📈
-
-<a href="https://www.star-history.com/#caelestia-dots/shell&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=caelestia-dots/shell&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=caelestia-dots/shell&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=caelestia-dots/shell&type=Date" />
- </picture>
-</a>

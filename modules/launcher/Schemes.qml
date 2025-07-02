@@ -33,7 +33,7 @@ Singleton {
         id: getSchemes
 
         running: true
-        command: ["caelestia", "scheme", "list"]
+        command: ["hyprlux", "scheme", "list"]
         stdout: StdioCollector {
             onStreamFinished: {
                 const schemeData = JSON.parse(text);
@@ -61,7 +61,7 @@ Singleton {
 
         function onClicked(list: AppList): void {
             list.visibilities.launcher = false;
-            Quickshell.execDetached(["caelestia", "scheme", "set", "-n", name, "-f", flavour]);
+            Quickshell.execDetached(["hyprlux", "scheme", "set", "-n", name, "-f", flavour]);
         }
     }
 }

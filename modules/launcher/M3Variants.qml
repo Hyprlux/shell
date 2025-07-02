@@ -85,7 +85,7 @@ Singleton {
 
         function onClicked(list: AppList): void {
             list.visibilities.launcher = false;
-            Quickshell.execDetached(["caelestia", "scheme", "set", "-v", variant]);
+            Quickshell.execDetached(["hyprlux", "scheme", "set", "-v", variant]);
         }
     }
 }
